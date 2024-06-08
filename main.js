@@ -79,7 +79,7 @@ while (true) {
         else {
             console.log('Your cart contains:');
             for (const item of cart) {
-                console.log(`${item.quantity} x ${item.animal.name} - $${item.animal.price * item.quantity}`);
+                console.log(`${item.quantity} x ${item.animal.name} - PKR ${item.animal.price * item.quantity}`);
             }
         }
     }
@@ -88,8 +88,11 @@ while (true) {
             console.log('Your cart is empty.');
         }
         else {
-            const total = cart.reduce((sum, item) => sum + item.animal.price * item.quantity, 0);
-            console.log(`Your total is $${total}.`);
+            let total = 0;
+            for (const item of cart) {
+                total += item.animal.price * item.quantity;
+            }
+            console.log(`Your total is ${total} PKR.`);
             cart = [];
             console.log('Thank you for your purchase!');
         }
