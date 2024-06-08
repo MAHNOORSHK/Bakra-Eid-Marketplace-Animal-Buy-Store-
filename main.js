@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 const animals = [
     { name: 'Cow', price: 300000 },
@@ -8,7 +9,6 @@ const animals = [
     { name: 'Buffalo', price: 20000 },
 ];
 let cart = [];
-// const runStore = async() => {
 while (true) {
     const answers = await inquirer.prompt([
         {
@@ -99,5 +99,3 @@ while (true) {
         break;
     }
 }
-// };
-// runStore();

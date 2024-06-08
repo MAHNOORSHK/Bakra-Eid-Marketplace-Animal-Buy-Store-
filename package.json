@@ -3,9 +3,10 @@
     "@types/node": "^20.14.2",
     "inquirer": "^9.2.23"
   },
-  "name": "animalbuyproject",
-  "version": "1.0.0",
+  "name": "mahnoorshk-bakra-eid-marketplace",
+  "version": "2.0.1",
   "main": "index.js",
+  "bin": "main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,7 @@
   "keywords": [],
   "author": "Mahnoor Shaikh",
   "license": "ISC",
-  "description": "",
+  "description": "BakraEidMarketplace is an interactive console application built with TypeScript and Inquirer.js, designed to streamline your Qurbani animal purchasing process for Bakra Eid. Whether you're looking to buy a goat, cow, sheep, or camel, our application ensures a smooth and user-friendly experience.",
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
   }
